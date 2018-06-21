@@ -8,16 +8,14 @@ end
 
 
 def not_safe?(speed)
-	
+	if 60 < speed || speed < 40
+    return true
+  else false
+  end
 end
 	
 
 
-#     it 'returns false if the speed is between 40 and 60' do
-#       answer = unsafe?(50)
-#       expect(answer).to eq(false)
-#     end
-#   end
 
 #   describe "#not_safe?" do
 #     it 'returns true if speed is greater than 60' do
